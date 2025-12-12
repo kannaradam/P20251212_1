@@ -19,13 +19,15 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Label Content="Felhasználó belépés" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Content="Felhasználónév: " Grid.Row="2" Grid.Column="1" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Label Content="Jelszó: " Grid.Row="3" Grid.Column="1" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <TextBox x:Name="fnev" Grid.Row="2" Grid.Column="2" Width="130" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-
+        <TextBox x:Name="Textfnev" Grid.Row="2" Grid.Column="2" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <PasswordBox x:Name="userpasswd" Grid.Row="3" Grid.Column="2" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnIn" Content="Belépés" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
+        <Button x:Name="btnMegse" Content="Mégse" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+        <Button x:Name="btnBezar" Content="Bezárás" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right"/>
     </Grid>
 </Window>
