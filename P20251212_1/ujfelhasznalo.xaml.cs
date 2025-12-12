@@ -29,9 +29,16 @@ namespace P20251212_1
 
         private void btnUjIn_Click(object sender, RoutedEventArgs e)
         {
+            
             string ujfnev = Textujfnev.Text;
             string ujjelszo = ujpasswd.Password;
             MessageBox.Show("Sikeres regisztráció!");
+            FileStream f = new FileStream("adat.txt", FileMode.Create);
+            StreamWriter iras = new StreamWriter(f);
+            iras.WriteLine(ujfnev);
+            iras.WriteLine(ujjelszo);
+            iras.Close();
+            f.Close();
         }
     }
 }

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace P20251212_1
 {
@@ -28,14 +29,25 @@ namespace P20251212_1
 
         private void btnIn_Click(object sender, RoutedEventArgs e)
         {
-            if (felhasznalo == Textfnev.Text && jelszo == userpasswd.Password)
+            /*if (felhasznalo == Textfnev.Text && jelszo == userpasswd.Password)
             {
                 MessageBox.Show("Sikeres belépés!");
             }
             else
             {
                 MessageBox.Show("Sikertelen belépés!");
-            }
+            }*/
+
+            
+
+
+            FileStream olvas = new FileStream("adat.txt", FileMode.Open);
+            StreamReader read = new StreamReader(olvas);
+            public string ffnev = read.ReadLine();
+            public string jjelszo = read.ReadLine();
+
+
+
         }
 
         private void btnElf_Click(object sender, RoutedEventArgs e)
