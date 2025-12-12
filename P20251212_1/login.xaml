@@ -19,6 +19,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Label Content="Felhasználó belépés" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
