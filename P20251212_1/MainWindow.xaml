@@ -5,19 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P20251212_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="400">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10px"/>
+            <ColumnDefinition Width="10"/>
             <ColumnDefinition/>
-            <ColumnDefinition Width="10px"/>
+            <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
+        <Label Grid.Row="1" Grid.Column="1" FontSize="20" Content="Autószervíz" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Image Source="C:\Users\info\source\repos\P20251212_1\P20251212_1\bin\Debug\net8.0-windows\car.jpg" Grid.Column="1" Grid.Row="2"/>
+        <Button x:Name="btnLogin" Grid.Column="1" Grid.Row="3" Content="Belépés" Width="100" Height="60"/>
     </Grid>
 </Window>
