@@ -1,0 +1,34 @@
+﻿<Window x:Class="P20251212_1.ujfelhasznalo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P20251212_1"
+        mc:Ignorable="d"
+        Title="ujfelhasznalo" Height="450" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Label Content="ÚjFelhasználó belépés" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Felhasználónév: " Grid.Row="2" Grid.Column="1" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Jelszó: " Grid.Row="3" Grid.Column="1" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="Textujfnev" Grid.Row="2" Grid.Column="2" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <PasswordBox x:Name="ujpasswd" Grid.Row="3" Grid.Column="2" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnUjIn" Content="Regisztráció" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Click="btnUjIn_Click"/>
+        <Button x:Name="btnUjMegse" Content="Mégse" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+        <Button x:Name="btnUjBezar" Content="Bezárás" VerticalAlignment="Center" Width="100" Height="40" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right"/>
+    </Grid>
+</Window>

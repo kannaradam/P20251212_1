@@ -19,9 +19,29 @@ namespace P20251212_1
     /// </summary>
     public partial class login : Window
     {
+        const string felhasznalo = "info";
+        const string jelszo = "Premo900";
         public login()
         {
             InitializeComponent();
+        }
+
+        private void btnIn_Click(object sender, RoutedEventArgs e)
+        {
+            if (felhasznalo == Textfnev.Text && jelszo == userpasswd.Password)
+            {
+                MessageBox.Show("Sikeres belépés!");
+            }
+            else
+            {
+                MessageBox.Show("Sikertelen belépés!");
+            }
+        }
+
+        private void btnElf_Click(object sender, RoutedEventArgs e)
+        {
+            ujfelhasznalo uji = new ujfelhasznalo();
+            uji.Show();
         }
     }
 }
