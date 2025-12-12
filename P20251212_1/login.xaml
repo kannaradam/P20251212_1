@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P20251212_1"
         mc:Ignorable="d"
-        Title="login" Height="450" Width="800">
+        Title="login" Height="450" Width="400">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Label Content="Felhasználó belépés" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Felhasználónév: " Grid.Row="2" Grid.Column="1" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Jelszó: " Grid.Row="3" Grid.Column="1" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="fnev" Grid.Row="2" Grid.Column="2" Width="130" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
     </Grid>
 </Window>
