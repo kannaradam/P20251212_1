@@ -21,6 +21,6 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="1" Grid.Column="1" FontSize="22" Content="Autószervíz" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Image Source="C:\Users\info\source\repos\P20251212_1\P20251212_1\bin\Debug\net8.0-windows\car.jpg" Grid.Column="1" Grid.Row="2"/>
-        <Button x:Name="btnLogin" Grid.Column="1" Grid.Row="3" Content="Belépés" Width="100" Height="60"/>
+        <Button x:Name="btnLogin" Grid.Column="1" Grid.Row="3" Content="Belépés" Width="100" Height="60" Click="btnLogin_Click"/>
     </Grid>
 </Window>
